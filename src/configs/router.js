@@ -21,7 +21,7 @@ export default new VueRouter({
      */
 
   routes: [
-        { path: '/dashboard', component: load('views/dashboard/one/dashboard'), meta: { name: 'Dashboard One' } },
+        { path: '/', component: load('views/dashboard/one/dashboard'), meta: { name: 'Dashboard One' } },
         { path: '/auth', component: load('Auth'), meta: { name: 'Form Login' } },
         { path: '/success', component: load('AuthSuccess'), meta: { name: 'Form Profile' } },
         { path: '/form', component: load('views/form/simpleForm/simpleForm'), meta: { name: 'Form find / edit' } },
