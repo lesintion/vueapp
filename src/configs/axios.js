@@ -15,7 +15,7 @@ let errorFunction = error => {
 }
 
 const axiosInstanceJsonPlaceholder =
-  axios.create({ baseURL: 'http://istio-ingressgateway-istio-system.apps-crc.testing/api/' })
+  axios.create({ baseURL: 'http://opc-todo-api/api/' })
 
 const axiosInstancePunk =
   axios.create({ baseURL: 'https://api.punkapi.com/v2/' })
