@@ -18,7 +18,7 @@ const axiosInstanceJsonPlaceholder =
   axios.create({ baseURL: 'https://jsonplaceholder.typicode.com/' })
 
 const todoInstancePlaceholder =
-  axios.create({ baseURL: 'https://localhost:5001' })
+  axios.create({ baseURL: 'http://opc-todo-api' })
 const axiosInstancePunk =
   axios.create({ baseURL: 'https://api.punkapi.com/v2/' })
 

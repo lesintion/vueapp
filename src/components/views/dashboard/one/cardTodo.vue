@@ -65,12 +65,12 @@
 
       },
       completeTodo (todo) {
-        this.$http.jsonplaceholder
+        this.$http.todoSvc
           .patch(`${this.api}/${todo.id}`, {completed : todo.completed})
           .then(response => { Toast.create.positive('Completed todo!') })
       },
       changeTitle (todo) {
-        this.$http.jsonplaceholder
+        this.$http.todoSvc
           .patch(`${this.api}/${todo.id}`, {title : todo.title})
           .then(response => { Toast.create.positive('Title updated successful!') })
       }
