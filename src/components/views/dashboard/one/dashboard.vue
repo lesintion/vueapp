@@ -43,7 +43,7 @@
       <div class="width-4of5 sm-width-1of1">
         <card-todo
           card-title="Generic todos"
-          api="todo">
+          api="todos">
         </card-todo>
       </div>
     </div>

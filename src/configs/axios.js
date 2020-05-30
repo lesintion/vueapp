@@ -15,10 +15,8 @@ let errorFunction = error => {
 }
 
 const axiosInstanceJsonPlaceholder =
-  axios.create({ baseURL: 'https://jsonplaceholder.typicode.com/' })
+  axios.create({ baseURL: 'http://istio-ingressgateway-istio-system.apps-crc.testing/api/' })
 
-const todoInstancePlaceholder =
-  axios.create({ baseURL: 'http://opc-todo-api' })
 const axiosInstancePunk =
   axios.create({ baseURL: 'https://api.punkapi.com/v2/' })
 
@@ -32,7 +30,6 @@ let clients = {
   $http: {
     get () {
       return {
-        todoSvc: todoInstancePlaceholder,
         jsonplaceholder: axiosInstanceJsonPlaceholder,
         punk: axiosInstancePunk
       }
