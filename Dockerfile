@@ -1,6 +1,13 @@
 # develop stage
 FROM node:alpine as develop-stage
 WORKDIR /app
+
+#Create environment variables
+ARG var_API_URL
+ARG var_API_URL=value
+ENV API_URL=${var_KeyVault_Url}
+
+
 COPY package*.json ./
 RUN npm install
 COPY . .
