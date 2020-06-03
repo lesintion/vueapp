@@ -15,7 +15,7 @@ let errorFunction = error => {
 }
 
 const axiosInstanceJsonPlaceholder =
-  axios.create({ baseURL: process.env.API_URL })
+  axios.create({ baseURL: window._env_.API_URL })
 
 const axiosInstancePunk =
   axios.create({ baseURL: 'https://api.punkapi.com/v2/' })
